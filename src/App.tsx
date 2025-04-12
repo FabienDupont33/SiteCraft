@@ -1,5 +1,6 @@
 // /src/App.tsx
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import {
   BrowserRouter as Router,
   Route,
@@ -34,26 +35,31 @@ const ScrollToAnchor = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <ThemeProvider theme={theme}>
-        <Header />
-        <ScrollToAnchor /> {/* Ce composant gère le scroll automatique */}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <HeroSection />
-                <ServicesSection />
-                <AboutSection />
-              </>
-            }
-          />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-        <Footer />
-      </ThemeProvider>
-    </Router>
+    <>
+      <Helmet>
+        <title>FD Web Développement - Accueil</title>
+      </Helmet>
+      <Router basename="/SiteCraft/">
+        <ThemeProvider theme={theme}>
+          <Header />
+          <ScrollToAnchor />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroSection />
+                  <ServicesSection />
+                  <AboutSection />
+                </>
+              }
+            />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+          <Footer />
+        </ThemeProvider>
+      </Router>
+    </>
   );
 };
 

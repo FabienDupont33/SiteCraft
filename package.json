@@ -1,7 +1,7 @@
 {
   "name": "sitecraft",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "https://FabienDupont33.github.io/SiteCraft/",
   "description": "FD Web Développement",
@@ -20,6 +20,8 @@
     "@mui/material": "^7.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.5.0",
     "yarn": "^1.22.22"
   },
@@ -27,6 +29,7 @@
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
+    "@types/react-helmet": "^6.1.11",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "@vitejs/plugin-react": "^4.3.4",

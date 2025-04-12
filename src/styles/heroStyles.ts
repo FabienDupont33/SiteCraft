@@ -2,8 +2,8 @@ import { SxProps, Theme } from '@mui/system';
 
 const heroStyles: { [key: string]: SxProps<Theme> } = {
   root: {
-    minHeight: '90vh',
-    backgroundImage: `url('/images/code-nature.jpg')`,
+    minHeight: '100vh',
+    backgroundImage: `url('/SiteCraft/images/hero-background.jpg')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: '#fff',
@@ -49,12 +49,6 @@ const heroStyles: { [key: string]: SxProps<Theme> } = {
   subtitle: {
     color: '#A5D6A7',
     mb: 4,
-  },
-  cta: {
-    backgroundColor: '#66BB6A',
-    '&:hover': {
-      backgroundColor: '#4CAF50',
-    },
   },
   wave: {
     position: 'absolute',

@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
             Des interfaces modernes, rapides et responsives pour propulser votre
             activité en ligne.
           </Typography>
-          <Button variant="contained" color="primary" sx={heroStyles.cta}>
+          <Button variant="contained" color="primary">
             Me contacter
           </Button>
         </Container>

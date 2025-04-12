@@ -15,6 +15,17 @@ const theme = createTheme({
     fontFamily: 'Roboto, Arial, sans-serif',
   },
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          backgroundColor: globalStyles.link.color,
+          color: '#fff',
+          '&:hover': {
+            backgroundColor: globalStyles.link['&:hover'].color,
+          },
+        },
+      },
+    },
     MuiLink: {
       styleOverrides: {
         root: {

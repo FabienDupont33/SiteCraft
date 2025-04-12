@@ -27,18 +27,31 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { label: 'Accueil', href: '/#hero' }, // Lien vers la page d'accueil (et ancre #hero)
-    { label: 'À propos', href: '/#about' },
     { label: 'Services', href: '/#services' },
+    { label: 'À propos', href: '/#about' },
     { label: 'Contact', href: '/contact' }, // Lien vers la page Contact
   ];
 
   return (
     <AppBar position="fixed" sx={headerStyles.appBar}>
       <Toolbar sx={headerStyles.toolbar}>
+        <Link
+          to="/"
+          style={{
+            textDecoration: 'none',
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          <img
+            src="images/logo.png"
+            alt="Logo FD Web Développement"
+            style={{ height: 80 }} // tu peux ajuster la taille
+          />
+        </Link>
         <Typography variant="h6" sx={headerStyles.typography}>
-          🌿 FD Web Développement
+          FD Web Développement
         </Typography>
-
         {/* Menu mobile */}
         <Box sx={headerStyles.mobileMenu}>
           <IconButton

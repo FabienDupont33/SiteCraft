@@ -1,4 +1,4 @@
-// /src/components/organisms/AboutSection.tsx.tsx
+// /src/components/organisms/AboutSection.tsx
 
 import React from 'react';
 import { Box, Typography, Container, Avatar } from '@mui/material';
@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
           <Box sx={aboutStyles.content}>
             <Avatar
               alt="Fabien Dupont"
-              src="/assets/images/avatar.jpg"
+              src="/SiteCraft/images/avatar.jpg"
               sx={aboutStyles.avatar}
             />
             <Box>
